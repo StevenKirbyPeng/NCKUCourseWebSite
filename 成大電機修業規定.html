@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>國立成功大學電機工程學系｜學士班修業規定完整整合版</title>
+<style>
+:root{
+  --ncku:#8b1e3f; --ncku2:#5f132b; --gold:#c99a3d;
+  --bg:#f4f6f8; --card:#fff; --text:#20252b; --muted:#667085;
+  --line:#dfe3e8; --green:#eef7e9; --blue:#edf5ff; --yellow:#fff8df;
+  --danger:#fff0f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;line-height:1.75}
+.hero{background:linear-gradient(135deg,var(--ncku),var(--ncku2));color:white;padding:44px 20px}
+.container{max-width:1180px;margin:auto}
+h1{font-size:clamp(28px,4.5vw,46px);line-height:1.3;margin:0 0 12px}
+.hero p{margin:0;opacity:.9}
+.nav{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav .container{display:flex;gap:8px;overflow:auto;padding:10px 14px}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--ncku);font-weight:700;padding:8px 12px;border-radius:999px}
+.nav a:hover{background:#f5e9ed}
+main{padding:26px 14px 60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:22px;box-shadow:0 8px 24px rgba(16,24,40,.05)}
+h2{color:var(--ncku);font-size:25px;margin:0 0 16px;padding-bottom:9px;border-bottom:2px solid #f1dfe5}
+h3{color:#6d2138;font-size:20px;margin:22px 0 10px}
+h4{margin:18px 0 8px;color:#374151}
+p{margin:8px 0}
+ol,ul{padding-left:24px}
+li{margin:6px 0}
+.notice{background:var(--yellow);border-left:5px solid var(--gold);padding:16px 18px;border-radius:12px;margin-bottom:22px}
+.warning{background:var(--danger);border-left:5px solid #d85162;padding:14px 18px;border-radius:12px}
+.info{background:var(--blue);border-left:5px solid #5b8def;padding:14px 18px;border-radius:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fafafa}
+.stat strong{display:block;color:var(--ncku);font-size:18px}
+.big{font-size:28px;font-weight:800;color:var(--ncku)}
+table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:14px}
+th,td{border:1px solid #cfd5dc;padding:9px 10px;vertical-align:top}
+th{background:#f5e9ed;color:#5b162b}
+tr.section td{background:#eef6e8;font-weight:700}
+.table-wrap{overflow-x:auto}
+.badge{display:inline-block;padding:2px 9px;border-radius:999px;background:#f1f3f5;margin:2px 3px;font-size:13px}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:#fff}
+summary{cursor:pointer;padding:13px 15px;font-weight:700;color:#5f1930}
+details>div{padding:0 15px 15px}
+.timeline{border-left:3px solid #e7ccd5;padding-left:18px}
+.timeline div{margin:8px 0}
+.form-box{border:2px dashed #b8bec7;padding:18px;border-radius:12px;background:#fcfcfd}
+.form-line{display:grid;grid-template-columns:140px 1fr;gap:8px;margin:8px 0}
+.blank{border-bottom:1px solid #777;min-height:28px}
+.checkbox{font-size:18px;letter-spacing:.02em}
+.kicker{font-size:13px;color:var(--muted);font-weight:700;text-transform:uppercase}
+.source-chip{font-size:12px;background:#f1f3f5;padding:3px 8px;border-radius:999px;color:#59636e}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+button{border:0;border-radius:10px;padding:9px 14px;background:white;color:var(--ncku);font-weight:700;cursor:pointer}
+button.secondary{background:#f7e8ed}
+footer{text-align:center;padding:25px;color:var(--muted);font-size:13px}
+@media(max-width:700px){
+  .card{padding:18px}
+  .form-line{grid-template-columns:1fr}
+  th,td{padding:7px;font-size:13px}
+}
+@media print{
+  .nav,.top-actions{display:none!important}
+  body{background:white}
+  .card{box-shadow:none;break-inside:avoid}
+  details{break-inside:avoid}
+  details>div{display:block!important}
+  summary{list-style:none}
+}
+</style>
+<script>
+function printPage(){window.print();}
+function openAll(){
+  document.querySelectorAll('details').forEach(d=>d.open=true);
+}
+function closeAll(){
+  document.querySelectorAll('details').forEach(d=>d.open=false);
+}
+</script>
+</head>
+<body>
+<section class="hero">
+<div class="container">
+  <div class="kicker" style="color:#f7d9e2">NCKU Department of Electrical Engineering</div>
+  <h1>國立成功大學電機工程學系<br>學士班修業規定｜完整整合版</h1>
+  <p>整合：學士班修業規定、各入學年度必修／學分表、111學年度畢業審查表、學碩一貫細則、專題研究（一）（二）課程說明與全部附件範本。</p>
+  <div class="top-actions">
+    <button onclick="printPage()">🖨 列印 / 存成 PDF</button>
+    <button onclick="openAll()">＋ 展開全部</button>
+    <button onclick="closeAll()">－ 收合全部</button>
+  </div>
+</div>
+</section>
+
+<div class="nav">
+<div class="container">
+<a href="#overview">總覽</a>
+<a href="#rules">修業規定</a>
+<a href="#year-tables">各年度學分表</a>
+<a href="#review111">111畢業審查表</a>
+<a href="#master">學碩一貫</a>
+<a href="#project">專題研究</a>
+<a href="#forms">專題附件表單</a>
+<a href="#general-ban">不承認通識</a>
+</div>
+</div>
+
+<main class="container">
+
+<div class="notice">
+<b>使用方式：</b>本頁將目前提供的資料全部併入同一個 HTML，不需要另外開啟 PDF、ODT 或 ZIP 內的文件。內容依原始文件整理；若未來系所公告有更新，仍以最新正式公告為準。
+</div>
+
+<section class="card" id="overview">
+<h2>快速總覽</h2>
+<div class="grid">
+  <div class="stat"><strong>114 學年度起</strong><span class="big">138</span> 最低畢業總學分<br>校定 28＋系定必修 59＋專業選修 51</div>
+  <div class="stat"><strong>112 學年度起</strong><span class="big">144</span> 最低畢業總學分<br>校定 28＋系定必修 62＋專業選修 54</div>
+  <div class="stat"><strong>111 學年度起</strong><span class="big">144</span> 最低畢業總學分<br>校定 28＋系定必修 64＋專業選修 52</div>
+  <div class="stat"><strong>107 學年度起</strong><span class="big">144</span> 最低畢業總學分<br>校定 28＋系定必修 64＋專業選修 52</div>
+</div>
+<div class="info" style="margin-top:14px">
+114 學年度起的重要差異：系定必修降為 59 學分、專業選修 51 學分，最低畢業總學分降為 138；6 門實驗至少選 3 門且及格，邏輯系統為系定必選。
+</div>
+</section>
+
+<section class="card" id="rules">
+<h2>一、學士班學生修業規定</h2>
+
+<details open>
+<summary>修訂歷程</summary>
+<div class="timeline">
+<div>108/02/26 課程與圖書委員會議修訂</div>
+<div>108/04/30 課程與圖書委員會議修訂</div>
+<div>108/05/28 系所務會議通過</div>
+<div>108/10/02 課程與圖書委員會議修訂</div>
+<div>108/10/09 系所務會議通過</div>
+<div>109/03/30 課程與圖書委員會議修訂</div>
+<div>109/04/09 系所務會議通過</div>
+<div>109/09/17 課程與圖書委員會議修訂</div>
+<div>109/10/08 系所務會議通過</div>
+<div>110/12/27 課程與圖書委員會議修訂</div>
+<div>111/01/12 系所務會議通過</div>
+<div>111/09/20 課程與圖書委員會議修訂</div>
+<div>111/10/05 系所務會議通過</div>
+<div>111/12/19 課程與圖書委員會議修訂</div>
+<div>112/01/04 系所務會議通過</div>
+<div>112/03/30 課程與圖書委員會議修訂</div>
+<div>112/04/11 系所務會議通過</div>
+<div>113/09/23 課程與圖書委員會議修訂</div>
+<div>113/10/07 系所務會議通過</div>
+<div>114/01/08 系所務會議通過</div>
+<div>114/05/26 課程與圖書委員會議修訂</div>
+<div>114/06/18 系所務會議通過</div>
+</div>
+</details>
+
+<h3>第一條｜畢業所需學分</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>入學年度</th><th>校定必修</th><th>系定必修</th><th>系定／專業選修</th><th>重點</th></tr></thead>
+<tbody>
+<tr><td>106</td><td>28</td><td>64</td><td>52（含必選11）</td><td>新增電子電路實驗（一）（二）；6選3實驗課</td></tr>
+<tr><td>107 起</td><td>28</td><td>64</td><td>52（含必選7）</td><td>畢業專題（一）（二）由必選改為選修</td></tr>
+<tr><td>111 起</td><td>28</td><td>64</td><td>52（含必選4）</td><td>資料結構緒論由必選改為選修</td></tr>
+<tr><td>112 起</td><td>28</td><td>62</td><td>54（含必選3）</td><td>專題討論改為必修；6選3實驗改為選修</td></tr>
+<tr><td>114 起</td><td>28</td><td>59</td><td>51（含必選3）</td><td>最低畢業總學分 138</td></tr>
+</tbody></table></div>
+<p>中五學制學生入學後，應至少補修 12 學分，且與電機系開設之必修課程不得重複。</p>
+
+<h3>第二條｜校定必修</h3>
+<p>依入學年度有不同規定，請詳閱本校通識教育中心各入學年度之通識規定。</p>
+
+<h3>第三條｜通識課程</h3>
+<ol>
+<li>通識課程名稱與本系課程名稱相同者，不予承認。</li>
+<li>依本校「通識課程選課要點」，「電機系不承認通識課程表」所列跨領域通識課程，因與本系專業課程相近，不予承認為畢業學分。</li>
+</ol>
+
+<h3>第四條｜系定必修及系定選修</h3>
+<p>依入學年度有不同規定，請詳閱各入學年度之「必修科目、學分數暨畢業總學分表」。</p>
+
+<h3>第五條｜系定必修課程</h3>
+<ol>
+<li>本系在學生必修科目第一次修習時必須選擇本系開授課程；修畢本系必修但成績不及格者，方可修讀其他系所開設之同課名且同學分課程。</li>
+<li>國際交換期間修讀必修科目不受前款限制，但修讀科目之學分須向本系審查小組申請抵免認定。</li>
+<li>外籍生及僑生修讀本系未開設英語授課必修課時，可修讀本校外系同課名且同學分之英語授課課程。</li>
+<li>轉系生及轉學生入學時申請補修大一共同必修或修讀大二以上必修科目時，依同樣原則辦理。</li>
+</ol>
+
+<h3>第六條｜系定選修課程</h3>
+<h4>（一）本系選修</h4>
+<ol>
+<li>本系選修以本系開設之選修課程為原則。</li>
+<li>電機工程研究所（N2）、微電子研究所（Q1）、電腦與通訊研究所（Q3）、奈米積體電路工程學位學程（Q7）、智慧資訊安全學位學程（NQ）之選修課程可列入本系選修學分。</li>
+<li>其他學校、學系或研究所課程原則上不承認為本系選修學分。</li>
+<li>自 112 學年度起，6 門選修實驗課（電工實驗、邏輯系統實驗、電機概論實驗、電儀表學實驗、控制工程實驗、通訊實驗）至少修習 3 門並及格。</li>
+</ol>
+<h4>（二）外系選修</h4>
+<ol>
+<li>自 111 學年度起開放外系選修至多 9 學分。</li>
+<li>外系課程名稱若與系上課程相同，原則上不納入畢業學分；列於「電機系外系選修學分承認表」者除外。</li>
+<li>教育學程、進修推廣部課程、選修 1 學分體育不納入畢業學分。</li>
+<li>英文以外第二外語可列入外系選修學分。</li>
+<li>外系研究所課程亦可列入外系選修學分。</li>
+<li>外系選修課程若開設兩學期以上，只修一學期亦予承認。</li>
+<li>111～113 學年度入學者，額外開放電機資訊學院選修至多 6 學分，仍須符合外系選修規定。</li>
+</ol>
+<h4>（三）外籍生及僑生</h4>
+<p>修讀本系未開設英語授課選修課時，不受外系選修 9 學分上限限制，可逕行修讀本校外系英語授課課程；但教育學程、進修推廣部課程、選修 1 學分體育不納入畢業學分。</p>
+
+<h3>第七條｜抵免規定</h3>
+<ol>
+<li>轉系、轉學生應填寫國立成功大學學分承認表，附原修課課程大綱，送本系審查小組審查。</li>
+<li>交換生出國修課前須提出申請，最遲於取得成績或學分證明後之次學期開學日起一週內抵免；應屆畢業生若交換期間有必修或必選未修畢，應優先申請抵免。</li>
+<li>交換生抵免原則為同年級以上且成績及格；若無對應課名，可擇一申請：
+<ul>
+<li>電路與系統專論（Special Topic in Circuits and Systems）</li>
+<li>程式與計算機系統專論（Special Topic in Programming and Computer System）</li>
+<li>微電子與材料專論（Special Topic in Micro-Electronics and Materials）</li>
+</ul></li>
+<li>未盡事宜依「國立成功大學學生抵免學分辦法」辦理。</li>
+</ol>
+
+<h3>第八條｜英語能力指標</h3>
+<p>依「國立成功大學學士班學生外國語言能力指標檢核辦法」辦理。本系生應於英語「聽、讀」具 CEFR B2 等級之英語能力檢定成績證明；未達成者，應修習並通過本校外語中心「線上補強英文」課程。</p>
+
+<h3>第九條｜其他</h3>
+<p>本規定未盡事宜，悉依「國立成功大學學則」及其他相關規定辦理。</p>
+</section>
+
+<section class="card" id="year-tables">
+<h2>二、各學年度起入學生必修科目、學分數暨畢業總學分表</h2>
+
+<details open>
+<summary>114 學年度起入學生｜最低畢業總學分 138</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>類別</th><th>科目名稱</th><th>學分</th><th>備註</th></tr></thead>
+<tbody>
+<tr class="section"><td rowspan="5">校定必修<br>28 學分</td><td>語文課程</td><td rowspan="4">依通識選修要點</td><td rowspan="4">參照國立成功大學通識課程選修要點規定</td></tr>
+<tr><td>領域通識</td></tr><tr><td>融合通識</td></tr><tr><td>踏溯台南</td></tr>
+<tr><td>體育</td><td>0</td><td>必修 4 學期</td></tr>
+
+<tr class="section"><td rowspan="15">系定必修<br>59 學分</td><td>微積分 1、2</td><td>6</td><td></td></tr>
+<tr><td>普通物理學 1、2</td><td>6</td><td></td></tr>
+<tr><td>普通物理學實驗 1、2</td><td>2</td><td></td></tr>
+<tr><td>計算機概論</td><td>3</td><td></td></tr>
+<tr><td>程式設計</td><td>3</td><td></td></tr>
+<tr><td>線性代數</td><td>3</td><td></td></tr>
+<tr><td>工程數學 1、2</td><td>6</td><td></td></tr>
+<tr><td>電路學 1、2</td><td>6</td><td></td></tr>
+<tr><td>電子學 1、2</td><td>6</td><td></td></tr>
+<tr><td>電子電路實驗 1、2</td><td>2</td><td></td></tr>
+<tr><td>專題討論</td><td>1</td><td></td></tr>
+<tr><td>電機概論</td><td>3</td><td></td></tr>
+<tr><td>電儀表學</td><td>3</td><td></td></tr>
+<tr><td>控制工程</td><td>3</td><td></td></tr>
+<tr><td>電磁學 1、2</td><td>6</td><td></td></tr>
+
+<tr class="section"><td rowspan="8">專業選修<br>51 學分</td><td>電工實驗</td><td>1</td><td rowspan="6">6 門至少選修 3 門且及格</td></tr>
+<tr><td>邏輯系統實驗</td><td>1</td></tr><tr><td>電機概論實驗</td><td>1</td></tr>
+<tr><td>電儀表學實驗</td><td>1</td></tr><tr><td>控制工程實驗</td><td>1</td></tr><tr><td>通訊實驗</td><td>1</td></tr>
+<tr><td>邏輯系統</td><td>3</td><td>系定必選</td></tr>
+<tr><td>外系課程</td><td>—</td><td>至多承認 9 學分</td></tr>
+</tbody></table></div>
+</div>
+</details>
+
+<details>
+<summary>112 學年度起入學生｜最低畢業總學分 144</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>類別</th><th>科目名稱</th><th>學分</th><th>備註</th></tr></thead>
+<tbody>
+<tr class="section"><td rowspan="6">校定必修<br>28 學分</td><td>語文課程</td><td rowspan="4">依通識選修要點</td><td rowspan="4">參照國立成功大學通識課程選修要點規定</td></tr>
+<tr><td>領域通識</td></tr><tr><td>融合通識</td></tr><tr><td>踏溯台南</td></tr>
+<tr><td>體育</td><td>0</td><td>必修 4 學期</td></tr><tr><td>服務學習 1、2、3</td><td>0</td><td></td></tr>
+<tr class="section"><td rowspan="14">系定必修<br>62 學分</td><td>微積分 1、2</td><td>6</td><td></td></tr>
+<tr><td>普通物理學 1、2</td><td>6</td><td></td></tr><tr><td>普通物理學實驗 1、2</td><td>2</td><td></td></tr>
+<tr><td>計算機概論 1、2</td><td>6</td><td>114-1 起：計算機概論 1 改名「計算機概論」；計算機概論 2 改名「程式設計」</td></tr>
+<tr><td>線性代數</td><td>3</td><td></td></tr><tr><td>工程數學 1、2</td><td>6</td><td></td></tr>
+<tr><td>電路學 1、2</td><td>6</td><td></td></tr><tr><td>電子學 1、2、3</td><td>9</td><td></td></tr>
+<tr><td>電子電路實驗 1、2</td><td>2</td><td></td></tr><tr><td>專題討論</td><td>1</td><td></td></tr>
+<tr><td>電機概論</td><td>3</td><td></td></tr><tr><td>電儀表學</td><td>3</td><td></td></tr>
+<tr><td>控制工程</td><td>3</td><td></td></tr><tr><td>電磁學 1、2</td><td>6</td><td></td></tr>
+<tr class="section"><td rowspan="8">專業選修<br>54 學分</td><td>6 門實驗</td><td>各 1</td><td>至少選修 3 門且及格</td></tr>
+<tr><td>電工實驗</td><td>1</td><td></td></tr><tr><td>邏輯系統實驗</td><td>1</td><td></td></tr>
+<tr><td>電機概論實驗</td><td>1</td><td></td></tr><tr><td>電儀表學實驗</td><td>1</td><td></td></tr>
+<tr><td>控制工程實驗</td><td>1</td><td></td></tr><tr><td>通訊實驗</td><td>1</td><td></td></tr>
+<tr><td>邏輯系統</td><td>3</td><td>系定必選；外系最多 9 + 電資學院額外最多 6，合計最多 15</td></tr>
+</tbody></table></div>
+</div>
+</details>
+
+<details>
+<summary>111 學年度起入學生｜最低畢業總學分 144</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>類別</th><th>科目名稱</th><th>學分</th><th>備註</th></tr></thead>
+<tbody>
+<tr class="section"><td rowspan="6">校定必修<br>28 學分</td><td>語文課程</td><td rowspan="4">依通識選修要點</td><td rowspan="4">參照通識課程選修要點</td></tr>
+<tr><td>領域通識</td></tr><tr><td>融合通識</td></tr><tr><td>踏溯台南</td></tr>
+<tr><td>體育</td><td>0</td><td>必修 4 學期</td></tr><tr><td>服務學習 1、2、3</td><td>0</td><td></td></tr>
+<tr class="section"><td rowspan="19">系定必修<br>64 學分</td><td>微積分 1、2</td><td>6</td><td></td></tr>
+<tr><td>普通物理學 1、2</td><td>6</td><td></td></tr><tr><td>普通物理學實驗 1、2</td><td>2</td><td></td></tr>
+<tr><td>計算機概論 1、2</td><td>6</td><td>114-1 起分別改名「計算機概論」、「程式設計」</td></tr>
+<tr><td>線性代數</td><td>3</td><td></td></tr><tr><td>工程數學 1、2</td><td>6</td><td></td></tr>
+<tr><td>電路學 1、2</td><td>6</td><td></td></tr><tr><td>電子學 1、2、3</td><td>9</td><td></td></tr>
+<tr><td>電子電路實驗 1、2</td><td>2</td><td></td></tr><tr><td>電機概論</td><td>3</td><td></td></tr>
+<tr><td>電儀表學</td><td>3</td><td></td></tr><tr><td>控制工程</td><td>3</td><td></td></tr>
+<tr><td>電磁學 1、2</td><td>6</td><td></td></tr>
+<tr><td>電工實驗</td><td>1</td><td rowspan="6">6 門自選 3 門；第 4 門起可計入專業選修</td></tr>
+<tr><td>邏輯系統實驗</td><td>1</td></tr><tr><td>電機概論實驗</td><td>1</td></tr>
+<tr><td>電儀表學實驗</td><td>1</td></tr><tr><td>控制工程實驗</td><td>1</td></tr><tr><td>通訊實驗</td><td>1</td></tr>
+<tr class="section"><td rowspan="3">專業選修<br>52 學分</td><td>邏輯系統</td><td>3</td><td>系定必選</td></tr>
+<tr><td>專題討論</td><td>1</td><td>系定必選</td></tr>
+<tr><td>外系／電資學院選修</td><td>—</td><td>外系最多 9 + 電資學院額外最多 6，合計最多 15</td></tr>
+</tbody></table></div>
+</div>
+</details>
+
+<details>
+<summary>107 學年度起入學生｜最低畢業總學分 144</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>類別</th><th>科目名稱</th><th>學分</th><th>備註</th></tr></thead>
+<tbody>
+<tr class="section"><td>校定必修</td><td>語文、領域通識、融合通識、踏溯台南、體育、服務學習</td><td>28</td><td>體育必修 4 學期；服務學習 1、2、3 為 0 學分</td></tr>
+<tr class="section"><td>系定必修</td><td>微積分、普通物理學、普通物理學實驗、計算機概論、線性代數、工程數學、電路學、電子學、電子電路實驗、電機概論、電儀表學、控制工程、電磁學，以及 6 選 3 實驗</td><td>64</td><td>第 4 門實驗起可計入專業選修</td></tr>
+<tr class="section"><td>專業選修</td><td>邏輯系統、資料結構緒論、專題討論等</td><td>52</td><td>三者均為系定必選；外系最多 9 + 電資學院額外最多 6，合計最多 15</td></tr>
+</tbody></table></div>
+</div>
+</details>
+</section>
+
+<section class="card" id="review111">
+<h2>三、111 學年度起入學生｜畢業審查表整合</h2>
+<p>此區依原畢業審查表整理，可直接當作線上檢核清單使用。</p>
+
+<details open>
+<summary>1. 語文課程 Language Courses</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>課程</th><th>學分</th><th>狀態</th></tr></thead>
+<tbody>
+<tr><td>國文 1 Basic Chinese 1</td><td>2</td><td class="checkbox">□及格/TR　□修課中</td></tr>
+<tr><td>國文 2 Basic Chinese 2</td><td>2</td><td class="checkbox">□及格/TR　□修課中</td></tr>
+<tr><td>英文 1 English 1</td><td>2</td><td class="checkbox">□及格/TR　□修課中</td></tr>
+<tr><td>英文 2 English 2</td><td>2</td><td class="checkbox">□及格/TR　□修課中</td></tr>
+<tr><th>小計</th><th>8</th><th></th></tr>
+</tbody></table></div>
+</div>
+</details>
+
+<details>
+<summary>2. 通識課程 General Education</summary>
+<div>
+<p><b>A 領域通識：</b>人文學、社會科學、自然與工程科學、生命科學與健康、科際整合五領域中至少修習三領域；至少 4 學分，至多承認 18 學分。</p>
+<p><b>B 融合通識：</b>至少 1 學分，至多 15 學分。</p>
+<p><b>A+B：</b>至少 19 學分，且 A、B 均須達最低學分要求。</p>
+<p><b>C 踏溯台南：</b>1 學分。</p>
+<p><b>A+B+C：</b>小計 20 學分。</p>
+</div>
+</details>
+
+<details>
+<summary>3. 體育 + 4. 服務學習</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>類別</th><th>課程</th><th>學分</th><th>狀態</th></tr></thead>
+<tbody>
+<tr><td rowspan="4">體育</td><td>體育 1</td><td>0</td><td>□及格/TR □修課中</td></tr>
+<tr><td>體育 2</td><td>0</td><td>□及格/TR □修課中</td></tr><tr><td>體育 3</td><td>0</td><td>□及格/TR □修課中</td></tr><tr><td>體育 4</td><td>0</td><td>□及格/TR □修課中</td></tr>
+<tr><td rowspan="3">服務學習</td><td>服務學習 1</td><td>0</td><td>□通過/TR □修課中</td></tr>
+<tr><td>服務學習 2</td><td>0</td><td>□通過/TR □修課中</td></tr><tr><td>服務學習 3</td><td>0</td><td>□通過/TR □修課中</td></tr>
+</tbody></table></div>
+</div>
+</details>
+
+<details>
+<summary>5. 專業必修｜64 學分</summary>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th>課程</th><th>英文</th><th>學分</th></tr></thead>
+<tbody>
+<tr><td>微積分（一）</td><td>Calculus 1</td><td>3</td></tr><tr><td>微積分（二）</td><td>Calculus 2</td><td>3</td></tr>
+<tr><td>普通物理學（一）</td><td>General Physics 1</td><td>3</td></tr><tr><td>普通物理學（二）</td><td>General Physics 2</td><td>3</td></tr>
+<tr><td>普通物理學實驗（一）</td><td>General Physics Laboratory 1</td><td>1</td></tr><tr><td>普通物理學實驗（二）</td><td>General Physics Laboratory 2</td><td>1</td></tr>
+<tr><td>計算機概論（一）</td><td>Introduction to Computer Science 1</td><td>3</td></tr><tr><td>計算機概論（二）</td><td>Introduction to Computer Science 2</td><td>3</td></tr>
+<tr><td>線性代數</td><td>Linear Algebra</td><td>3</td></tr><tr><td>工程數學（一）</td><td>Engineering Mathematics 1</td><td>3</td></tr><tr><td>工程數學（二）</td><td>Engineering Mathematics 2</td><td>3</td></tr>
+<tr><td>電路學（一）</td><td>Electric Circuit 1</td><td>3</td></tr><tr><td>電路學（二）</td><td>Electric Circuit 2</td><td>3</td></tr>
+<tr><td>電子學（一）</td><td>Electronics 1</td><td>3</td></tr><tr><td>電子學（二）</td><td>Electronics 2</td><td>3</td></tr><tr><td>電子學（三）</td><td>Electronics 3</td><td>3</td></tr>
+<tr><td>電子電路實驗（一）</td><td>Electronics Circuit Laboratory 1</td><td>1</td></tr><tr><td>電子電路實驗（二）</td><td>Electronics Circuit Laboratory 2</td><td>1</td></tr>
+<tr><td>電機概論</td><td>Introduction to Electrical Machinery</td><td>3</td></tr><tr><td>電儀表學</td><td>Electric Instruments</td><td>3</td></tr>
+<tr><td>控制工程</td><td>Control Engineering</td><td>3</td></tr><tr><td>電磁學（一）</td><td>Electromagnetic Fields and Waves 1</td><td>3</td></tr><tr><td>電磁學（二）</td><td>Electromagnetic Fields and Waves 2</td><td>3</td></tr>
+<tr><td>電工實驗</td><td>Electrical Engineering Laboratory</td><td>1</td></tr><tr><td>邏輯系統實驗</td><td>Logic System Laboratory</td><td>1</td></tr>
+<tr><td>電機概論實驗</td><td>Basic Electrical Machinery Laboratory</td><td>1</td></tr><tr><td>電儀表學實驗</td><td>Electric Instrumentation Laboratory</td><td>1</td></tr>
+<tr><td>控制工程實驗</td><td>Control Engineering Laboratory</td><td>1</td></tr><tr><td>通訊實驗</td><td>Communication Laboratory</td><td>1</td></tr>
+</tbody></table></div>
+</div>
+</details>
+
+<details>
+<summary>6～10. 選修、研究所抵免與英語門檻</summary>
+<div>
+<ul>
+<li><b>本系選修（含表格 7、8）：</b>≥52 學分；僅 E2、N2、Q1、Q3、Q7、NQ 可納入此項。</li>
+<li><b>外系選修：</b>≤9 學分。</li>
+<li><b>電資學院選修：</b>≤6 學分。</li>
+<li><b>畢業後預計申請抵免研究所科目：</b>僅未納入大學畢業學分之研究所科目可列入。</li>
+<li><b>英語畢業門檻：</b>確認是否已上系統申請通過或補強英文通過。</li>
+<li><b>最後檢查：</b>請將本學期正在選修的學分一併計入。</li>
+</ul>
+</div>
+</details>
+</section>
+
+<section class="card" id="master">
+<h2>四、電機系暨微電子所、電通所、奈積學程、資安學程一貫修讀學、碩士學位實行細則</h2>
+<p><span class="source-chip">113 年 4 月 3 日系所務會議通過版本</span></p>
+<ol>
+<li><b>第一條：</b>依「國立成功大學一貫修讀學、碩士學位辦法」，鼓勵電機資訊學院、理學院及工學院優秀大學生直接修讀本系所碩士班。</li>
+<li><b>第二條：</b>電機資訊學院學生累計在校平均達全系或全班前 75% 以內（含）；理學院及工學院前 30% 以內（含），且已修畢應修畢業學分二分之一以上、在學達六學期以上之三年級學生，可申請預研生。</li>
+<li><b>第三條：</b>各組依研究需求公告專業課程成績加權公式及最低錄取標準，以公開方式甄選；原則於大三下學期結束前後辦理。</li>
+<li><b>第四條：</b>符合資格者可同時登記各組；依基礎必修完成情形、累計平均、各組專業課程加權成績排序，聯合選組及選指導教授，直到名額額滿。</li>
+<li><b>第五條：</b>各組預研生最高額度原則為該組當年度碩士班甄試錄取名額之二分之一（含）；每位教授每年原則至多指導 3 位預研生。</li>
+<li><b>第六條：</b>電機資訊學院學生若達前 20% 以內（含），理學院及工學院達前 10% 以內（含），可自行尋找指導教授並經同意後直接錄取為預研生；不受每位教授至多 3 人限制，但合計至多 4 人，且各組總人數不得超過當年度碩士班甄試錄取名額的三分之二。</li>
+<li><b>第七條：</b>預研生應依指導教授指導立即進行研究，並接受專業課程選讀規劃。</li>
+<li><b>第八條：</b>預研生應於第八學期（含）前取得學士學位，並參加最近一次本系所碩士班甄試或一般生考試；經錄取後才正式取得碩士班研究生資格。經指導教授推薦者，將直接錄取本校甄試碩士班研究生；未獲推薦者喪失預研生資格，但仍可透過甄試或一般生考試取得正式資格。</li>
+<li><b>第九條：</b>正式取得碩士班資格後，大學期間所修之碩士班課程，成績達 80 分以上且經指導教授同意者，可申請抵免最多 21 學分（不含論文）；外系所承認學分最多不得超過其畢業規定最低總學分的二分之一。已計入大學畢業學分者不得重複抵免碩士班學分。抵免申請應於入學當學期註冊日截止一週內辦理。</li>
+<li><b>第十條：</b>正式取得研究生資格後，以一年畢業為原則；仍須依規定修滿碩士學分並完成論文。</li>
+<li><b>第十一條：</b>細則經系所務會議通過後實施，修正時亦同。</li>
+</ol>
+</section>
+
+<section class="card" id="project">
+<h2>五、各學群專題研究（一）（二）課程說明</h2>
+<h3>目的</h3>
+<p>為鼓勵學生積極參與專題研究，提升專題品質，並提供互相切磋觀摩之機會，特訂定本課程。</p>
+<h3>適用對象</h3>
+<p>修習以下三學群專題研究之學生：</p>
+<p><span class="badge">電子與材料學群</span><span class="badge">電路與系統學群</span><span class="badge">資訊與通訊學群</span></p>
+
+<h3>繳交指導教授同意書</h3>
+<ol>
+<li>每位學生須於當學期選課確認截止日前上傳，紙本自行留存。</li>
+<li>資料填妥並由指導教師簽名後拍照，上傳至表單：<a href="https://forms.gle/eF7EJiH4ujj15xMm7" target="_blank">指導教授同意書上傳表單</a>。</li>
+<li>專題研究（一）及專題研究（二）皆須各上傳一次。</li>
+<li>每位指導教授指導學生人數不限。</li>
+</ol>
+
+<h3>繳交期末報告</h3>
+<ol>
+<li>原則：專題研究（一）為「構想書」，專題研究（二）為「報告書」，以指導教授確認為主。</li>
+<li>PDF 電子檔上傳至：<a href="https://forms.gle/mENbxTyfVQUejGRe9" target="_blank">期末報告上傳表單</a>。</li>
+<li>每位組員皆須個別上傳；檔名只列該位上傳者的學號與姓名。</li>
+<li>檔名範例：<br>
+<code>電子與材料學群_專題研究1_構想書_E24555555王小名.pdf</code><br>
+<code>電路與系統學群_專題研究2_報告書_E24333333張小明.pdf</code></li>
+<li>須於當學期學校行事曆第 17～18 週上傳，逾期學期成績以零分計。</li>
+</ol>
+
+<h3>繳交專題研究評分表</h3>
+<ol>
+<li>每位同學使用一張評分表，須由指導教授評分並簽名。</li>
+<li>須於第 17～18 週送至電機系辦學士班承辦人；逾期學期成績以零分計。</li>
+</ol>
+<p><b>學士班承辦人：</b>陳先生　<a href="mailto:z10310029@ncku.edu.tw">z10310029@ncku.edu.tw</a></p>
+
+<h3>專題研究（一）構想書規範</h3>
+<div class="warning"><b>構想書：</b>內容包含封面，至少 5 頁。</div>
+<ol>
+<li>專題摘要</li>
+<li>專題內容
+<ul><li>專題動機（或目的、緣起）</li><li>專題企劃與構想</li></ul></li>
+<li>專題執行規劃
+<ul><li>進度甘特圖</li><li>經費預算（optional）</li><li>工作分配或分工方案</li></ul></li>
+<li>專題預期成果</li>
+<li>參考（引用）書目或資料來源</li>
+</ol>
+
+<h3>專題研究（二）實作成果報告規範</h3>
+<ul>
+<li>對象：本學期修習專題研究（二）之同學。</li>
+<li>頁數：含封面、摘要、目錄、參考文獻、附錄等，限 10～25 頁，至少 10 頁為原則。</li>
+<li>摘要：500 字內，列出 3 個關鍵字。</li>
+<li>Abstract：500 字內，列出 3 個 Keyword。</li>
+<li>正文：前言 → 原理分析與系統設計 → 實驗結果 → 結論 → 參考文獻 → 計畫管理與團隊合作方式。</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>格式項目</th><th>規定</th></tr></thead>
+<tbody>
+<tr><td>紙張</td><td>A4（21 × 30 公分），彩色或黑白皆可</td></tr>
+<tr><td>排版</td><td>直式一欄橫書，1.5 倍行高</td></tr>
+<tr><td>邊界</td><td>上下 2.54、左右 3.17、裝訂邊靠左 1.0</td></tr>
+<tr><td>頁碼</td><td>摘要及目錄使用羅馬數字 I、II、III…；內文使用阿拉伯數字，頁面下方置中</td></tr>
+<tr><td>字體</td><td>內文 12pt Times New Roman（英文、數字、符號）及楷書（中文）；各層級標題 14 或 16 號粗體</td></tr>
+<tr><td>前置頁</td><td>封面 → 中文摘要 → 英文摘要 → 目錄</td></tr>
+<tr><td>報告最後</td><td>附參考文獻列表、計畫管理與團隊合作方式說明</td></tr>
+</tbody></table></div>
+
+<h4>報告章節內容</h4>
+<ol>
+<li><b>前言：</b>研究目的、背景、問題說明、解決方法、創新、實作結果概要與文獻探討。</li>
+<li><b>原理分析與系統設計：</b>包含 2.1 原理分析、2.2 系統設計。圖標題置於圖下；表格標題置於表上，並註明資料來源。</li>
+<li><b>實驗結果：</b>呈現所設計軟硬體系統的實驗結果，並說明是否達成研究目的及支持創新構想。</li>
+<li><b>結論。</b></li>
+<li><b>參考文獻：</b>依報告引用順序列出；文內以 [2]、[3] 等形式標示。若無參考文獻，仍須保留本章並註明「本文件無參考文獻」。</li>
+<li><b>計畫管理與團隊合作方式：</b>說明計畫提出、實作、進度管理、問題解決、指導教授指導方式，以及組員工作分配、協調合作、討論方式與頻率。</li>
+</ol>
+
+<h4>原範本中的參考文獻示例</h4>
+<ol>
+<li>N. Mohan, T. M. Undeland, and W. P. Robbins, <i>Poewr Electronic, Converters, Applications and Design</i>, Wiley, New York, USA, 1995.</li>
+<li>Y. Y. Tzou, “DSP-based Fully Digital of a PWM DC-AC Converter for AC Voltage Regulation,” IEEE Power Electronics Specialists Conference, June 1995, pp. 138-144.</li>
+<li>A. V. Jouanne, P. N. Enjeti, and D. J. Lucas, “DSP Control of High Power UPS Systems Feeding Nolinear Loads,” IEEE Transactions on Industrial Electronics, Vol. 43, No. 1, Feb 1996, pp. 121-125.</li>
+</ol>
+</section>
+
+<section class="card" id="forms">
+<h2>六、專題研究附件表單（網頁化）</h2>
+
+<h3>A. 指導教授同意書</h3>
+<div class="form-box">
+<div class="form-line"><b>學號：</b><div class="blank"></div></div>
+<div class="form-line"><b>姓名：</b><div class="blank"></div></div>
+<div class="form-line"><b>電話：</b><div class="blank"></div></div>
+<div class="form-line"><b>E-mail：</b><div class="blank"></div></div>
+<div class="form-line"><b>學年度／學期：</b><div class="blank"></div></div>
+<p class="checkbox">專題組別：□電子與材料學群　□電路與系統學群　□資訊與通訊學群</p>
+<p class="checkbox">選修課程：□專題研究（一）　□專題研究（二）</p>
+<p class="checkbox">期末報告：□構想書　□報告書</p>
+<div class="form-line"><b>指導教授簽名：</b><div class="blank"></div></div>
+<div class="form-line"><b>日期：</b><div class="blank"></div></div>
+<p><small>備註：每學期修習專題研究皆須指導教授同意書，最遲於當學期選課確認截止日前上傳。</small></p>
+</div>
+
+<h3>B. 專題研究構想書封面</h3>
+<div class="form-box" style="text-align:center">
+<h2 style="border:0;margin-bottom:4px">國立成功大學 電機工程學系</h2>
+<h2 style="border:0">專題研究構想書</h2>
+<p>﹝中文題目﹞</p><div class="blank"></div>
+<p>﹝英文題目﹞</p><div class="blank"></div>
+<p class="checkbox">專題組別：□電子與材料　□電路與系統　□資訊與通訊</p>
+<div class="form-line"><b>指導教授：</b><div class="blank"></div></div>
+<div class="form-line"><b>組員學號 & 姓名：</b><div class="blank"></div></div>
+<div class="form-line"><b>日期：</b><div class="blank"></div></div>
+</div>
+
+<h3>C. 專題研究實作成果報告書封面</h3>
+<div class="form-box" style="text-align:center">
+<h2 style="border:0;margin-bottom:4px">國立成功大學 電機工程學系</h2>
+<h2 style="border:0">專題研究實作成果報告書</h2>
+<p>（專題中文名稱）</p><div class="blank"></div>
+<p>（專題英文名稱）</p><div class="blank"></div>
+<p class="checkbox">專題組別：□電子與材料　□電路與系統　□資訊與通訊</p>
+<div class="form-line"><b>指導教授：</b><div class="blank"></div></div>
+<div class="form-line"><b>組員學號 & 姓名：</b><div class="blank"></div></div>
+<div class="form-line"><b>研究期間：</b><div class="blank">　年　月至　年　月底止，計　個月</div></div>
+</div>
+
+<h3>D. 專題研究評分表</h3>
+<div class="form-box">
+<div class="form-line"><b>學年度／學期：</b><div class="blank"></div></div>
+<p class="checkbox">專題組別：□電子與材料學群　□電路與系統學群　□資訊與通訊學群</p>
+<p class="checkbox">選修課程：□專題研究（一）　□專題研究（二）</p>
+<div class="form-line"><b>學號：</b><div class="blank"></div></div>
+<div class="form-line"><b>姓名：</b><div class="blank"></div></div>
+<div class="form-line"><b>成績：</b><div class="blank"></div></div>
+<div class="form-line"><b>指導教授簽名：</b><div class="blank"></div></div>
+<div class="form-line"><b>日期：</b><div class="blank"></div></div>
+<p><small>一位同學一張評分表；第 17～18 週送至電機系辦學士班承辦人，逾期以零分計。</small></p>
+</div>
+</section>
+
+<section class="card" id="general-ban">
+<h2>七、電機系不承認通識課程表</h2>
+<h3>112 學年度起入學生適用</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>領域</th><th>不承認課程</th></tr></thead>
+<tbody>
+<tr><td>社會科學領域</td><td>應用統計、資訊系統應用</td></tr>
+<tr><td>自然與工程科學領域</td><td>應用電學、應用電學與智慧電網、網路與資訊科技、電腦入門與應用、工程概論、光電科技導論、界面化學的生活應用、能源概論、WWW 網頁設計、奈米科技導論、生活中玩光電、拍出跨域資訊應用首部曲—Python、應用物理與實驗、R 語言入門</td></tr>
+</tbody></table></div>
+
+<h3>111 學年度（含）以前入學生適用</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>領域</th><th>不承認課程</th></tr></thead>
+<tbody>
+<tr><td>社會科學領域</td><td>應用統計、資訊系統應用</td></tr>
+<tr><td>自然與工程科學領域</td><td>應用電學、應用電學與智慧電網、網路與資訊科技、電腦入門與應用、工程概論、光電科技導論、界面化學的生活應用、能源概論、WWW 網頁設計、奈米科技導論</td></tr>
+</tbody></table></div>
+
+<h3>電機系外系選修學分承認表</h3>
+<p>依學士班修業規定，與本系課程同名之外系課程原則上不予承認，但經課程委員會審查通過、列入此表者不在此限。</p>
+<div class="table-wrap"><table>
+<thead><tr><th>系所</th><th>課程</th></tr></thead>
+<tbody><tr><td>資訊系</td><td>作業系統</td></tr></tbody>
+</table></div>
+</section>
+
+<section class="card">
+<h2>八、文件來源索引</h2>
+<ul>
+<li>國立成功大學電機工程學系學士班學生修業規定</li>
+<li>電機工程學系各學年度起入學生必修科目、學分數暨畢業總學分表</li>
+<li>電機系畢業審查表（111 學年度起入學生適用）</li>
+<li>電機系暨微電子所、電通所、奈積學程、資安學程一貫修讀學、碩士學位實行細則（113.04.03）</li>
+<li>各學群專題研究（一）（二）課程說明及附件：
+  <ul>
+  <li>專題研究（一）（二）課程說明</li>
+  <li>專題研究指導教授同意書</li>
+  <li>專題研究構想書範本</li>
+  <li>專題研究實作成果報告書範本</li>
+  <li>專題研究評分表</li>
+  </ul>
+</li>
+</ul>
+</section>
+
+</main>
+<footer>國立成功大學電機工程學系｜學生修業資料完整網頁整合版</footer>
+</body>
+</html>
