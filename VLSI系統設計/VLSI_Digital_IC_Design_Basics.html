@@ -245,7 +245,7 @@ Real Digital IC / SoC</div>
         <b>Design Entry → Simulation → Synthesis → Place &amp; Route → Sign-off → GDSII</b>。
         Simulation 驗證功能；Synthesis 將 RTL 映射到 standard cells；
         Place &amp; Route 將 cell 放到真實幾何位置並完成 routing；
-        Sign-off 則檢查 timing、DRC、LVS、power 等是否符合要求。
+        Sign-off 是 tape-out 前的最終檢查階段，通常包含 sign-off STA（時序）、physical verification（如 DRC/LVS），並依設計需求進行 power、signal integrity、IR-drop、electromigration（EM）等分析；這些檢查通常由不同 EDA 工具與流程共同完成。
       </p>
       <p style="margin:7px 0 13px;">
         這個流程的實務核心是 <b>PPA：Power、Performance、Area</b>。
@@ -490,12 +490,12 @@ Digital IC / SoC</div>
 <h3>6. End Market</h3>
 <p><b>IC Distributor</b> 負責通路；<b>System Manufacturers</b> 則將 CPU、Memory、PMIC、Sensor、PCB、Display、Software 等整合成手機、電腦與各種電子產品。</p>
 <h3>7. 與本課的關係</h3>
-<div class="flow">本課重點：IC Design + EDA → RTL / HDL → Simulation → Synthesis → Verification → Physical Design / GDS → 之後才進 Foundry、Packaging、Testing</div>
+<div class="flow">本課重點：IC Design + EDA → RTL / HDL → RTL Simulation / Functional Verification → Synthesis → STA / Equivalence &amp; Post-synthesis Checks → Physical Design → Sign-off → GDSII / OASIS → 之後才進 Foundry、Packaging、Testing</div>
 </div>
 <div class="tech-extension">
 <div class="extension-label">新增｜技術與應用延伸</div>
 <h3>技術延伸：產業鏈如何對應實際 Tape-out</h3>
-<p>Design House 產生 GDS；Foundry 依 PDK 與 mask 製造 wafer；OSAT/封測端完成 dicing、packaging、final test；系統廠再把 IC 放進 PCB 與終端設備。任何一環的規格改變，都可能回頭影響設計。</p>
+<p>Design House 完成 tape-out database（常見格式為 GDSII 或 OASIS）；Foundry 依 PDK、design rules 與 mask 資料製造 wafer；OSAT/封測端完成 dicing、packaging、final test；系統廠再把 IC 放進 PCB 與終端設備。任何一環的規格改變，都可能回頭影響設計。</p>
 <h3>實務應用</h3><p>例如先進製程需要 foundry 提供 standard cell、SRAM compiler、I/O library 與 design rule；EDA 工具也要支援該 PDK。這就是為什麼「製程、EDA、IP、設計」彼此高度綁定。</p>
 </div></section><section class="page-card unified-page" data-page="7" id="p7">
 <div class="page-head"><span class="page-num">第 7 頁</span><div><h2>Moore’s Law</h2><p>Transistor Count 隨時間呈指數式增長的長期趨勢</p></div></div>
