@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>生命之道｜課程完整攻略</title>
+<style>
+  :root{
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --ink:#1f2937;
+    --muted:#667085;
+    --line:#e5e7eb;
+    --primary:#3559a8;
+    --primary2:#6b7fd7;
+    --accent:#a96f2d;
+    --good:#1f7a5a;
+    --warn:#b45309;
+    --soft:#eef3ff;
+    --soft2:#fff7ed;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,#f8fbff 0,#f6f8fb 220px);
+    line-height:1.75;
+  }
+  .wrap{max-width:1100px;margin:auto;padding:28px 18px 64px}
+  .hero{
+    background:linear-gradient(135deg,#24458c,#536fc2);
+    color:#fff;border-radius:24px;padding:34px 36px;
+    box-shadow:0 16px 40px rgba(39,69,140,.18);
+  }
+  .hero h1{margin:0 0 8px;font-size:34px}
+  .hero p{margin:4px 0;color:#edf2ff}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+        border-radius:999px;padding:6px 12px;font-size:14px}
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(246,248,251,.93);backdrop-filter:blur(10px);
+    margin:18px 0;padding:10px;border-radius:16px;border:1px solid var(--line);
+  }
+  nav a{display:inline-block;text-decoration:none;color:var(--primary);
+        padding:7px 10px;border-radius:10px;font-weight:700;font-size:14px}
+  nav a:hover{background:var(--soft)}
+  section{margin-top:28px}
+  h2{font-size:26px;margin-bottom:14px;color:#223f80}
+  h3{font-size:19px;margin:20px 0 8px}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:20px;box-shadow:0 6px 18px rgba(16,24,40,.04)
+  }
+  .card h3{margin-top:0}
+  .full{grid-column:1/-1}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden}
+  th,td{border:1px solid var(--line);padding:12px 13px;vertical-align:top}
+  th{background:#eef3ff;text-align:left;color:#27458e}
+  .note,.tip,.warn{
+    border-left:5px solid var(--primary);background:var(--soft);
+    padding:14px 16px;border-radius:12px;margin:14px 0
+  }
+  .tip{border-left-color:var(--good);background:#eefbf6}
+  .warn{border-left-color:var(--warn);background:var(--soft2)}
+  .score{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px
+  }
+  .score div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+  .score b{display:block;font-size:26px;color:#294d9f}
+  .checklist li{margin:5px 0}
+  .timeline{border-left:3px solid #bfd0ff;margin-left:8px;padding-left:20px}
+  .step{margin:0 0 18px;position:relative}
+  .step:before{content:"";position:absolute;width:12px;height:12px;background:#4c67b9;border-radius:50%;
+               left:-27px;top:8px}
+  .tag{font-size:13px;border-radius:999px;padding:3px 9px;background:#eef3ff;color:#31519d;font-weight:700}
+  .small{font-size:14px;color:var(--muted)}
+  .footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+  @media(max-width:760px){
+    .grid{grid-template-columns:1fr}
+    .score{grid-template-columns:repeat(2,1fr)}
+    .hero{padding:26px 22px}
+    .hero h1{font-size:28px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>生命之道（The WORD of Life）課程完整攻略</h1>
+  <p>依課程大綱整理：課程介紹、上課準備、作業、期中報告／期末考與高分策略。</p>
+  <div class="chips">
+    <span class="chip">2 學分</span>
+    <span class="chip">通識教育 A9038</span>
+    <span class="chip">授課教師：徐德修</span>
+    <span class="chip">上課地點：土木系 4507 室</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#intro">① 課程完整介紹</a>
+  <a href="#prepare">② 上課要準備什麼</a>
+  <a href="#homework">③ 作業怎麼準備</a>
+  <a href="#report">④ 報告／期末怎麼準備</a>
+  <a href="#highscore">⑤ 如何拿高分</a>
+</nav>
+
+<section id="intro">
+  <h2>① 完整的課程介紹</h2>
+
+  <div class="card">
+    <h3>課程核心</h3>
+    <p>
+      本課程以「生命」為中心，從<strong>科學、哲學與神學</strong>等不同角度討論生命的意義，
+      並比較無神論、有神論、一神論、泛神論、二元論等世界觀對人生價值判斷的影響。
+      課程也會透過聖經、教會歷史、宗教改革與基督思想的核心教義，
+      引導學生了解基督信仰如何理解生命、人生、救贖與價值。
+    </p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>主要教學內容</h3>
+      <ol>
+        <li>基督信仰背景：聖經背景、教會歷史概述</li>
+        <li>「生命」之定義</li>
+        <li>以色列人史略（舊約時代）</li>
+        <li>舊約到新約概論</li>
+        <li>生命故事：亞伯拉罕、摩西、大衛與所羅門、彼得與保羅、耶穌</li>
+        <li>上帝對世人的救贖故事</li>
+        <li>電影、話劇或視聽節目欣賞</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>這門課真正重視什麼？</h3>
+      <ul>
+        <li>不是只背宗教知識，而是理解「生命」與「人生價值」的觀點。</li>
+        <li>能把課堂內容轉化成自己的整理、思考與反省。</li>
+        <li>重視出席、上課態度、閱讀、作業與報告。</li>
+        <li>報告宜聚焦基督思想本身，不要刻意製造宗教衝突。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>成績結構</h3>
+  <div class="score">
+    <div><b>0–30</b>出席與上課態度</div>
+    <div><b>0–30</b>期中報告</div>
+    <div><b>0–30</b>期末考試</div>
+    <div><b>0–15</b>作業與課堂表現</div>
+  </div>
+
+  <div class="warn">
+    <strong>重要：</strong>原始課程大綱寫的是「期中報告 + 期末考試」，並沒有明列「期末報告」。
+    因此若老師之後口頭宣布期末報告，應以老師最新說明為準；目前準備策略應先把
+    <strong>期中報告</strong>與<strong>期末考</strong>準備好。
+  </div>
+
+  <h3>指定／建議教材</h3>
+  <table>
+    <tr><th>教材</th><th>用途</th></tr>
+    <tr><td>《聖經》新舊約全書</td><td>課程明列必備，建議上課攜帶或準備可查閱版本。</td></tr>
+    <tr><td>《基督教會史略》</td><td>掌握教會歷史與發展脈絡。</td></tr>
+    <tr><td>《基督思想與人生－課程講義拾零》</td><td>與課堂及講義閱讀最直接相關。</td></tr>
+    <tr><td>《我靈歌唱》、《我靈歌唱－續集》</td><td>補充信仰與生命經驗內容。</td></tr>
+    <tr><td>《神學淺嚐》</td><td>補充基督教神學概念。</td></tr>
+    <tr><td>《福音圖像》</td><td>作為福音與基督思想的輔助閱讀。</td></tr>
+  </table>
+</section>
+
+<section id="prepare">
+  <h2>② 上課要準備什麼？</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>每次上課前</h3>
+      <ul class="checklist">
+        <li>☐ 帶課程講義、筆記本／平板。</li>
+        <li>☐ 準備《聖經》或可快速查經文的版本。</li>
+        <li>☐ 若前一週有指定閱讀，先看過並標記重點。</li>
+        <li>☐ 把不懂的名詞先列下來，例如：舊約、新約、救贖、信義、三位一體等。</li>
+        <li>☐ 準備 1 個可以在課堂上回應的問題或想法。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>上課中</h3>
+      <ul>
+        <li><strong>準時到：</strong>出席本身就是重要分數。</li>
+        <li><strong>不要睡覺：</strong>課綱已把上課睡覺列入態度評分。</li>
+        <li><strong>記老師反覆強調的句子：</strong>這些最可能進入期末考。</li>
+        <li><strong>把人物、事件、概念做成對照：</strong>例如亞伯拉罕→信心；摩西→出埃及與律法。</li>
+        <li><strong>主動發言：</strong>因作業分包含發言與反應表，越早累積越安全。</li>
+      </ul>
+    </div>
+
+    <div class="card full">
+      <h3>建議的「一頁筆記法」</h3>
+      <table>
+        <tr><th>區塊</th><th>要寫什麼</th></tr>
+        <tr><td>本週主題</td><td>例如：摩西的生命故事、救贖、教會歷史。</td></tr>
+        <tr><td>3 個關鍵概念</td><td>只寫最重要的三點，不要整頁抄老師投影片。</td></tr>
+        <tr><td>人物／事件</td><td>人物做了什麼？事件的意義是什麼？</td></tr>
+        <tr><td>一句自己的理解</td><td>用自己的話重新說明，不照抄課文。</td></tr>
+        <tr><td>可能考題</td><td>把老師特別強調的概念改寫成問句。</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="homework">
+  <h2>③ 作業要準備什麼？</h2>
+
+  <div class="card">
+    <p>依課程大綱，作業占 <strong>0–15 分</strong>，形式並不是只有一種，而是由多種平時表現累積。</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>1. 發言＋反應表</h3>
+      <p>老師要求「發言並繳交不重複主題之發言條及反應表」。因此最好的做法是每週都累積一個不同主題。</p>
+      <div class="tip">
+        可用固定格式：<br>
+        <strong>今天的主題 → 我理解到什麼 → 我有什麼疑問 → 對人生有何啟發。</strong>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>2. 作品／專題／見證／表演</h3>
+      <p>可包含相關作品發表、專題報告、個人信仰見證經歷或節目表演等。</p>
+      <p>即使沒有宗教背景，也可以做「人物生命故事」、「思想整理」、「課堂概念圖」等偏學術型作品。</p>
+    </div>
+
+    <div class="card">
+      <h3>3. 講義閱讀與填空</h3>
+      <p>講義填空常常也是期末考的重要來源。建議當週完成，不要累積到考前。</p>
+    </div>
+
+    <div class="card">
+      <h3>作業高分原則</h3>
+      <ul>
+        <li>準時交。</li>
+        <li>題目不要與自己之前發言重複。</li>
+        <li>不要只有摘要，一定要有自己的反思。</li>
+        <li>內容具體，最好能連結課堂人物、事件、經文或概念。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="report">
+  <h2>④ 報告／期末要怎麼準備？</h2>
+
+  <div class="note">
+    <strong>先區分：</strong>目前大綱明確要求的是「期中報告 0–30 分」與「期末考試 0–30 分」。
+    所以下面分成兩部分說明。
+  </div>
+
+  <h3>A. 期中報告：如何準備</h3>
+  <div class="card">
+    <p><span class="tag">格式</span> A4、14 號字、紙本繳交，並自存電子檔。</p>
+    <p><span class="tag">選題</span> 可從 I～IV 任選一項，另可自選有意義的主題。</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>可選的報告類型</h3>
+      <ol>
+        <li>基督思想對「某主題」的影響。</li>
+        <li>某人物的生命故事。</li>
+        <li>基督思想之內涵要義。</li>
+        <li>基督思想在某問題上的立論。</li>
+        <li>由某事件／人物／作品看基督思想。</li>
+        <li>基督思想與某思想在生命意義上的比較。</li>
+        <li>參加至少三次主日崇拜並寫紀錄心得。</li>
+        <li>訪問基督徒老師、牧師或傳道人。</li>
+        <li>借閱相關書籍寫讀書心得。</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>最穩定的高分選題</h3>
+      <ul>
+        <li>「由摩西的生命故事看使命與成長」</li>
+        <li>「由大衛的生命故事看選擇、錯誤與悔改」</li>
+        <li>「基督思想中的生命意義與人生價值」</li>
+        <li>「由耶穌的生命看基督思想中的愛與救贖」</li>
+        <li>「基督思想對現代大學生生命教育的啟發」</li>
+      </ul>
+      <div class="warn">
+        課綱明確提醒：<strong>宗教比較、引發爭論盡量避免；性別平等議題也盡量避免。</strong>
+        因此選題最好不要故意做容易形成對立的題目。
+      </div>
+    </div>
+  </div>
+
+  <h3>建議報告結構</h3>
+  <table>
+    <tr><th>段落</th><th>內容</th><th>寫作重點</th></tr>
+    <tr><td>1. 前言</td><td>為何選這個題目</td><td>用 1～2 段交代動機、問題意識。</td></tr>
+    <tr><td>2. 背景</td><td>人物／思想／事件背景</td><td>客觀整理，不要一開始就寫心得。</td></tr>
+    <tr><td>3. 課程內容連結</td><td>與基督思想、生命意義的關係</td><td>這一段最重要，要明確連回課堂。</td></tr>
+    <tr><td>4. 分析</td><td>你如何理解、有哪些重要觀點</td><td>避免只抄資料，要有自己的整理。</td></tr>
+    <tr><td>5. 個人反思</td><td>對自己人生、價值、選擇的啟發</td><td>具體，不寫空泛的「我學到很多」。</td></tr>
+    <tr><td>6. 結論</td><td>重新回答報告主題</td><td>濃縮最重要的 2～3 個結論。</td></tr>
+    <tr><td>7. 參考資料</td><td>聖經、課程講義、書籍等</td><td>來源寫清楚，提高完整度。</td></tr>
+  </table>
+
+  <h3>B. 期末考：如何準備</h3>
+  <div class="timeline">
+    <div class="step">
+      <strong>第 1 步：每週建立一頁摘要</strong><br>
+      不要等考前才整理；每週用一頁記下人物、事件、關鍵名詞。
+    </div>
+    <div class="step">
+      <strong>第 2 步：建立「人物 × 事件 × 意義」表</strong><br>
+      例如：摩西 → 出埃及 → 拯救／律法／使命。
+    </div>
+    <div class="step">
+      <strong>第 3 步：整理歷史時間線</strong><br>
+      舊約 → 以色列史 → 新約 → 耶穌 → 初代教會 → 教會歷史／宗教改革。
+    </div>
+    <div class="step">
+      <strong>第 4 步：背名詞時要能解釋</strong><br>
+      不只知道名稱，更要能用 2～3 句說出意義。
+    </div>
+    <div class="step">
+      <strong>第 5 步：考前自己出題</strong><br>
+      例如：「為何摩西在生命之道課程中具有代表性？」、「救贖在基督思想中的核心意義為何？」
+    </div>
+  </div>
+</section>
+
+<section id="highscore">
+  <h2>⑤ 如何拿到高分？</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>高分關鍵 1：先保住出席 30 分</h3>
+      <p>這門課出席與上課態度占比非常高。與其期末才補救，不如先做到「不缺席、不遲到、不早退、不睡覺」。</p>
+    </div>
+
+    <div class="card">
+      <h3>高分關鍵 2：平時作業不要放掉</h3>
+      <p>15 分看似不多，但會直接拉開總分。每次發言、反應表、閱讀填空都視為累積分數。</p>
+    </div>
+
+    <div class="card">
+      <h3>高分關鍵 3：報告一定要「有課程連結」</h3>
+      <p>不是查一堆網路資料，而是要讓老師看得出你真的理解課堂中的「生命、信仰、價值、救贖」等概念。</p>
+    </div>
+
+    <div class="card">
+      <h3>高分關鍵 4：報告加入個人反思</h3>
+      <p>通識課程很重視「我如何理解」。最理想是客觀內容約 60～70%，個人分析與反思約 30～40%。</p>
+    </div>
+
+    <div class="card">
+      <h3>高分關鍵 5：期末考抓老師語言</h3>
+      <p>老師課堂反覆講、板書、填空、人物故事的核心意義，通常比課外細節更重要。</p>
+    </div>
+
+    <div class="card">
+      <h3>高分關鍵 6：避免踩題目雷區</h3>
+      <p>課綱明確提醒宗教比較與容易引發爭議的內容盡量避免。報告宜用理解與分析的語氣，不用挑戰或辯論式寫法。</p>
+    </div>
+  </div>
+
+  <h3>推薦的「90 分以上」執行方式</h3>
+  <table>
+    <tr><th>項目</th><th>目標</th><th>具體做法</th></tr>
+    <tr><td>出席與態度</td><td>28–30 / 30</td><td>全勤、準時、不睡覺、主動聽講。</td></tr>
+    <tr><td>期中報告</td><td>27–30 / 30</td><td>提早選題、內容有課堂連結、有反思、有參考資料。</td></tr>
+    <tr><td>期末考</td><td>25–30 / 30</td><td>每週整理、考前用人物表與時間線複習。</td></tr>
+    <tr><td>作業</td><td>13–15 / 15</td><td>每項都交、主題不重複、發言與反應具體。</td></tr>
+  </table>
+
+  <div class="tip">
+    <strong>最實用的一句話：</strong>
+    這門課要拿高分，不是靠期末前一次衝刺，而是「全勤 + 每週簡單整理 + 作業全交 + 報告有自己的思考」。
+  </div>
+</section>
+
+<div class="footer">
+  本頁依使用者提供之《生命之道課程大綱》兩頁內容整理。若教師日後於課堂、Moodle 或公告中更新評分方式，以最新公告為準。
+</div>
+
+</div>
+</body>
+</html>
